@@ -1,0 +1,482 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Charifit</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> 
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+    theme: "light1",
+    exportFileName: "Doughnut Chart",
+    exportEnabled: true,
+    animationEnabled: true,
+    title:{
+        
+ text: "Rastet ne Kosove"
+    },
+    legend:{
+        cursor: "pointer",
+        itemclick: explodePie
+    },
+    data: [{
+        type: "doughnut",
+        innerRadius: 90,
+        showInLegend: true,
+        toolTipContent: "<b>{name}</b>: ${y} (#percent%)",
+        indexLabel: "{name} - #percent%",
+        dataPoints: [
+            { y: 25,name: "Prishtina" },
+            { y: 21,name: "Vushtrria" },
+            { y: 20 , name: " Mitrovica e Veriut" },
+            { y: 18 , name: "Gjilani" },
+            { y: 13 , name: "Kamenica" },
+            { y: 10 , name: "Gjakova"},
+            { y: 10 , name: "Zveçani" },
+                { y: 7 , name: "Vitia" },
+            { y: 6 , name: "Peja" },
+            { y: 4 , name: "Podujeva" },
+            { y: 3, name: "Klina" },
+            { y: 3, name: "Fushë Kosova"},
+            { y: 3, name: "Others" },
+                 { y: 7 , name: "Prizreni" },
+            { y: 3 , name: "Leposaviqi" },
+            { y: 4 , name: "Podujeva" },
+            { y: 3, name: "Suhareka" },
+            { y: 2, name: "Ferizaj"},
+            { y: 2 , name: " Zubin Potoku" },
+                 { y: 2  , name: "Lipjani " },
+            { y: 1 , name: "Drenasi" },
+            { y: 1 , name: "Obiliqi " },
+            { y: 1, name: "komuna e Shtimes" }
+            
+        ]
+    }]
+});
+chart.render();
+
+function explodePie (e) {
+    if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+        e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+    } else {
+        e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+    }
+    e.chart.render();
+}
+
+}
+</script>
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div class="header-top_area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-12 col-lg-8">
+                            <div class="short_contact_list">
+                                <ul>
+                                    <li><a href="#"> <i class="fa fa-phone"></i>Numri i Emergjences: 038 200 80 800</a></li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="covid.jpg" width="200" height="90" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="main-menu">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="index.html">Ballina</a></li>
+                                        <li><a href="About.html">Simptomat</a></li>
+                                         <li><a href="About.html">Gjendja ne Kosove</a></li>
+                                         <li><a href="index.html">Masat</a></li>
+                                       
+                                </nav>
+                            
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+     
+    <div class="slider_area">
+        <div class="single_slider  d-flex align-items-center slider_bg_1 overlay2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="slider_text ">
+                    
+                            <h3> #RRI
+                            N'SHPI</h3>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- reson_area_start  -->  
+     <div class="news__area section_padding">
+      <div class="reson_area section_padding">
+      
+        <div class="container">
+            <div class="row justify-content-center">
+
+        <div class="container">
+
+        =
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb-55">
+                         <div class="single__blog d-flex align-items-center">
+                           
+                     
+                </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_reson">
+                        <div class="thum">
+                            <div class="thum_1">
+                               
+                            </div>
+                        </div>
+                        <div class="help_content">
+                            <h4>Temperatura</h4>
+                            <p>Nder simptomat e para eshte temperatura</p>
+                            <a href="#" class="read_more">Lexo me shume</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_reson">
+                        <div class="thum">
+                            <div class="thum_1">
+                               
+                            </div>
+                        </div>
+                        <div class="help_content">
+                            <h4>Kollitja</h4>
+                            <p>Kollitja eshte nje shenje tjeter e Covid-19</p>
+                            <a href="#" class="read_more">lexo me shume</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_reson">
+                        <div class="thum">
+                            <div class="thum_1">
+                                
+                            </div>
+                        </div>
+                        <div class="help_content">
+                            <h4>Frymemarrjen</h4>
+                            <p>Problemet me frymemarrjen shfaqen akoma me.</p>
+                            <a href="#" class="read_more">lexo me shume </a>
+                        </div>
+                    </div>
+                </div>
+           </div>
+</div>
+</div>
+</div>
+
+
+        </div>
+    </div>
+ 
+                    
+    <!-- reson_area_end  -->
+
+   
+    <!-- latest_activites_area_end  -->
+     <div class="news__area section_padding">
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+</div>
+    <!-- popular_causes_area_start  -->
+    <div class="popular_causes_area section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb-55">
+                        <h3><span>Mbrojtja nga virusi</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="causes_active owl-carousel">
+                        <div class="single_cause">
+                            <div class="thumb">
+                                <img src="wyh.jpg" width="200" height="280" alt="">
+                            </div>
+                            <div class="causes_content">
+                                <div class="custom_progress_bar">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                            
+                                        
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="balance d-flex justify-content-between align-items-center">
+                                
+                                </div>
+                                <h4>Pastroni Duart</h4>
+                                <p>
+Në përgjithësi është më mirë të lani duart me sapun dhe ujë</p>
+                
+                            </div>
+                        </div>
+                        <div class="single_cause">
+                            <div class="thumb">
+                                <img src="uatfc.png"width="200" height="280" alt="">
+                            </div>
+                            <div class="causes_content">
+                                <div class="custom_progress_bar">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                        
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="balance d-flex justify-content-between align-items-center">
+                                
+                                </div>
+                                <h4>Gjthmon perdor faculeta</h4>
+                                <p>Sidomos ne raste te kollitjeve apo teshtitjes</p>
+                           
+                            </div>
+                        </div>
+                        <div class="single_cause">
+                            <div class="thumb">
+                                <img src="atyf.jpg" width="200" height="280"alt="">
+                            </div>
+                            <div class="causes_content">
+                                <div class="custom_progress_bar">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                           
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="balance d-flex justify-content-between align-items-center">
+                                    
+                                </div>
+                                <h4>Shmangni prekjen e fytyres</h4>
+                                <p>
+                                Shmangni prekjen e fytyres, nese nuk i keni duart e pasterta!
+                                </p>
+                    
+                            </div>
+                        </div>
+                        <div class="single_cause">
+                            <div class="thumb">
+                                <img src="img/causes/1.png" alt="">
+                            </div>
+                            <div class="causes_content">
+                                <div class="custom_progress_bar">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                           
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="balance d-flex justify-content-between align-items-center">
+                                    
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popular_causes_area_end  -->
+<!-- counter_area_start  -->
+    <div class="counter_area">
+        <div class="container">
+            <div class="counter_bg overlay">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single_counter d-flex align-items-center justify-content-center">
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single_counter d-flex align-items-center justify-content-center">
+                            <div class="icon">
+                                <i class="flaticon-heart-beat"></i>
+                            </div>
+                            <div class="events">
+                                <h3 class="counter">81865</h3>
+                                <p>Rastet e vdekjes </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single_counter d-flex align-items-center justify-content-center">
+                            <div class="icon">
+                                <i class="flaticon-in-love"></i>
+                            </div>
+                            <div class="events">
+                                <h3 class="counter">300054</h3>
+                                <p>Rastet e sheruara </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single_counter d-flex align-items-center justify-content-center">
+                        
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <! -- faqja tjeter-->
+    <div class="news__area section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb-55">
+                        <h3><span>Lajmet e Fundit</span></h3>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="news_active owl-carousel">
+                        <div class="single__blog d-flex align-items-center">
+                            <div class="thum">
+                                <img src="vaksina.jpg" alt="">
+                            </div>
+                            <div class="newsinfo">
+                                <span>4 prill, 2020</span>
+                                <a href="https://telegrafi.com/vaksina-e-dyte-ne-shba-kunder-covid-19-fillojne-provat-klinike/">
+                                    <h3>Vaksina e dytë në SHBA kundër COVID-19, fillojnë provat klinike</h3>
+                                </a>
+                                <p>Studiuesit amerikanë kanë nisur një tjetër provë sigurie të një vaksine eksperimentale për COVID-19, duke </p>
+                                <a class="read_more" href="https://telegrafi.com/vaksina-e-dyte-ne-shba-kunder-covid-19-fillojne-provat-klinike/">Lexo me shume</a>
+                            </div>
+                        </div>
+                        <div class="single__blog d-flex align-items-center">
+                            <div class="thum">
+                                <img src="qkmf.jpg" alt="">
+                            </div>
+                            <div class="newsinfo">
+                                <span>4 prill, 2020</span>
+                                <a href="https://telegrafi.com/komuna-e-prishtines-sot-peruron-tunelin-dezinfektues-ne-qkmf/">
+                                    <h3>Komuna e Prishtinës sot përuron tunelin dezinfektues në QKMF</h3>
+                                </a>
+                                <p>Komuna e Prishtinës ka pajisur Qendrën Kryesore të Mjeksisë Familjare edhe </p>
+
+                             <a class="read_more" href="https://telegrafi.com/komuna-e-prishtines-sot-peruron-tunelin-dezinfektues-ne-qkmf/">Lexo me shume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- news__area_end  -->
+
+    <div data-scroll-index='1' class="make_donation_area section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb-55">
+                        
+<p>#RRI N'SHPI</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer_end  -->
+
+    <!-- link that opens popup -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
